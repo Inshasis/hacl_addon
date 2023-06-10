@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include hacl_addon *.css
+recursive-include hacl_addon *.csv
+recursive-include hacl_addon *.html
+recursive-include hacl_addon *.ico
+recursive-include hacl_addon *.js
+recursive-include hacl_addon *.json
+recursive-include hacl_addon *.md
+recursive-include hacl_addon *.png
+recursive-include hacl_addon *.py
+recursive-include hacl_addon *.svg
+recursive-include hacl_addon *.txt
+recursive-exclude hacl_addon *.pyc
