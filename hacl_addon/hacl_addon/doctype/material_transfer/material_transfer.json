@@ -1,0 +1,319 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-06 22:56:02.524830",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date_time",
+  "mcf_date_time",
+  "column_break_zshsn",
+  "location",
+  "location_abbr",
+  "section_break_pcmkx",
+  "mcf_number",
+  "column_break_snfvt",
+  "source_warehouse",
+  "target_warehouse",
+  "section_break_yujev",
+  "items",
+  "section_break_vhxhk",
+  "requirement_type",
+  "column_break_ypnnt",
+  "amended_from",
+  "remarks",
+  "mtf_section_section",
+  "pickup_person",
+  "person_pickup_material_view",
+  "column_break_vu3sj",
+  "person_id_proof",
+  "person_id_proof_view",
+  "section_break_zniy4",
+  "user_remark",
+  "column_break_qo9xg",
+  "approving_authority_remark",
+  "section_break_mla1i",
+  "terms",
+  "section_break_k8hzr",
+  "material_issue_by",
+  "column_break_wb8e6",
+  "form_fill_by",
+  "material_issue_by_form",
+  "column_break_ptvxp",
+  "approve_by",
+  "mi_iss_approved",
+  "section_break_s6a3o",
+  "person_who_has_come_to_pick_the_material_signature",
+  "column_break_kqyzr",
+  "material_issued_by_signature",
+  "column_break_ajsac",
+  "material_issue_approved_by_signature"
+ ],
+ "fields": [
+  {
+   "default": "now",
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date & Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_pcmkx",
+   "fieldtype": "Section Break",
+   "label": "MCF Section"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_snfvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Target Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_yujev",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "MT Item"
+  },
+  {
+   "fieldname": "column_break_zshsn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mcf_number",
+   "fieldtype": "Link",
+   "label": "MCF Number",
+   "options": "Material Call",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location Of User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location_abbr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Location Abbr"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "MTF-.{location_abbr}.-.MM.-.YY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mcf_date_time",
+   "fieldtype": "Datetime",
+   "label": "MCF Date & Time"
+  },
+  {
+   "fieldname": "section_break_vhxhk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requirement_type",
+   "fieldtype": "Select",
+   "label": "MCF Requirement Type",
+   "options": "\nUrgent\nNormal"
+  },
+  {
+   "fieldname": "column_break_ypnnt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "MCF Remarks"
+  },
+  {
+   "fieldname": "mtf_section_section",
+   "fieldtype": "Section Break",
+   "label": "MTF Section"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Material Transfer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "pickup_person",
+   "fieldtype": "Attach",
+   "label": "Person who has come to pick the material (Photo)?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "person_pickup_material_view",
+   "fieldtype": "Image",
+   "label": "Person Pickup Material View",
+   "options": "pickup_person"
+  },
+  {
+   "fieldname": "column_break_vu3sj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "person_id_proof",
+   "fieldtype": "Attach",
+   "label": "Person who has come to pick the material (ID Proof photo)?"
+  },
+  {
+   "fieldname": "person_id_proof_view",
+   "fieldtype": "Image",
+   "label": "Person ID Proof View",
+   "options": "person_id_proof"
+  },
+  {
+   "fieldname": "section_break_zniy4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user_remark",
+   "fieldtype": "Small Text",
+   "label": "User Remark"
+  },
+  {
+   "fieldname": "column_break_qo9xg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approving_authority_remark",
+   "fieldtype": "Small Text",
+   "label": "Approving Authority Remark"
+  },
+  {
+   "fieldname": "section_break_mla1i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Small Text",
+   "label": "Terms and Conditions",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_k8hzr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "material_issue_by",
+   "fieldtype": "Data",
+   "label": "Person who has come to pick the material (Name)?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wb8e6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "form_fill_by",
+   "fieldtype": "Link",
+   "label": "Form Filled By (UserName)?",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "material_issue_by_form",
+   "fieldtype": "Data",
+   "label": "Material issued By (Name)?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ptvxp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approve_by",
+   "fieldtype": "Link",
+   "label": "Form Approved By (UserName)?",
+   "options": "User"
+  },
+  {
+   "fieldname": "mi_iss_approved",
+   "fieldtype": "Data",
+   "label": "Material issue Approved By (Name)?"
+  },
+  {
+   "fieldname": "section_break_s6a3o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "person_who_has_come_to_pick_the_material_signature",
+   "fieldtype": "Signature",
+   "label": "Person who has come to pick the material (Signature)?"
+  },
+  {
+   "fieldname": "column_break_kqyzr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_issued_by_signature",
+   "fieldtype": "Signature",
+   "label": "Material issued By (Signature)?"
+  },
+  {
+   "fieldname": "column_break_ajsac",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_issue_approved_by_signature",
+   "fieldtype": "Signature",
+   "label": "Material issue Approved By (Signature)?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-08 01:45:50.397819",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Material Transfer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

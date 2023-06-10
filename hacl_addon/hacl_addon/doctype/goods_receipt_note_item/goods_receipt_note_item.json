@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-08 13:58:10.664386",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "item_expiry_date",
+  "uom",
+  "qty",
+  "recive_qty",
+  "photo_one",
+  "video_one",
+  "photo_two",
+  "video_two"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Item Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "PO / MTF Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo_one",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Photo One",
+   "reqd": 1
+  },
+  {
+   "fieldname": "video_one",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Video One",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo_two",
+   "fieldtype": "Attach",
+   "label": "Photo Two"
+  },
+  {
+   "fieldname": "video_two",
+   "fieldtype": "Attach",
+   "label": "Video Two"
+  },
+  {
+   "fieldname": "recive_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Recive Qty",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-08 17:20:37.514270",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Goods Receipt Note Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

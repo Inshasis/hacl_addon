@@ -1,0 +1,234 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-06 20:15:19.638719",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_ezddm",
+  "consuming_department",
+  "amended_from",
+  "section_break_yplnp",
+  "terms",
+  "section_break_m3ym1",
+  "test_details",
+  "material_details",
+  "section_break_ny8q4",
+  "column_break_nzdq2",
+  "purpose",
+  "remarks",
+  "section_break_qqxqh",
+  "consumption_by",
+  "material_consumption_user",
+  "column_break_idqvo",
+  "consumption_authority",
+  "material_consumption_approver",
+  "column_break_xpjy1",
+  "form_verified_by",
+  "material_declaration_verifier",
+  "approver_otp",
+  "section_attachement",
+  "attach_verified_mdf",
+  "signatures_section",
+  "mdf_declaration_by_signature",
+  "column_break_up164",
+  "mdf_approved_by_signature",
+  "column_break_9yhxl",
+  "material_declaration_verified_signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "terms",
+   "fieldtype": "Small Text",
+   "label": "Terms & Conditions"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Material Declaration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_yplnp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_qqxqh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "consuming_department",
+   "fieldtype": "Link",
+   "label": "Declaring Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "consumption_by",
+   "fieldtype": "Link",
+   "label": "Form Filled By (Username)?",
+   "options": "User"
+  },
+  {
+   "fieldname": "consumption_authority",
+   "fieldtype": "Link",
+   "label": "Form Approved By (Username)?",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_idqvo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_m3ym1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_nzdq2",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Purpose",
+   "options": "Controls & Calibration\nDead Volume\nWastage\nUnknown Error\nMishandling\nMisplaced\nKnown / Other Reasons"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "material_consumption_user",
+   "fieldtype": "Link",
+   "label": "Material Declaration Filled By (Name)?",
+   "options": "User"
+  },
+  {
+   "fieldname": "material_consumption_approver",
+   "fieldtype": "Link",
+   "label": "Material Declaration Approved By (Name)?)",
+   "options": "User"
+  },
+  {
+   "fieldname": "approver_otp",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approver OTP"
+  },
+  {
+   "fieldname": "test_details",
+   "fieldtype": "Table",
+   "label": "Tests Details",
+   "options": "Test Declaration"
+  },
+  {
+   "fieldname": "material_details",
+   "fieldtype": "Table",
+   "label": "Material Details",
+   "options": "Material Declaration Item"
+  },
+  {
+   "fieldname": "section_break_ny8q4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "signatures_section",
+   "fieldtype": "Section Break",
+   "label": "Signatures"
+  },
+  {
+   "fieldname": "column_break_up164",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mdf_approved_by_signature",
+   "fieldtype": "Signature",
+   "label": "Material Declaration Approved By (Signature)"
+  },
+  {
+   "fieldname": "mdf_declaration_by_signature",
+   "fieldtype": "Signature",
+   "label": "Material Declaration Filled By (Signature)"
+  },
+  {
+   "fieldname": "column_break_ezddm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9yhxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_declaration_verified_signature",
+   "fieldtype": "Signature",
+   "label": "Material Declaration Verified By (Signature)"
+  },
+  {
+   "fieldname": "column_break_xpjy1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "form_verified_by",
+   "fieldtype": "Link",
+   "label": "Form Verified By (Username)?",
+   "options": "User"
+  },
+  {
+   "fieldname": "material_declaration_verifier",
+   "fieldtype": "Link",
+   "label": "Material Declaration Verified By (Name)?",
+   "options": "User"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_attachement",
+   "fieldtype": "Section Break",
+   "label": "Attachements"
+  },
+  {
+   "fieldname": "attach_verified_mdf",
+   "fieldtype": "Attach Image",
+   "label": "Attach Verified Material Declaration Form"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-07 23:55:54.413047",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Material Declaration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

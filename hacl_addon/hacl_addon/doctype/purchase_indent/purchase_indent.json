@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-10 17:51:24.896930",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date_time",
+  "column_break_ytj6v",
+  "filled_by",
+  "location",
+  "location_abbr",
+  "section_break_rdtzd",
+  "items",
+  "section_break_kjqff",
+  "attach_one",
+  "column_break_2rp9o",
+  "attach_two",
+  "column_break_ia2sf",
+  "attach_three",
+  "section_break_yovpe",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Naming Series",
+   "options": "\nPI-M.{location_abbr}.-.MM.-.YY.-\nPI-S.{location_abbr}.-.MM.-.YY.-",
+   "reqd": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ytj6v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "filled_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Filled By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "User Location"
+  },
+  {
+   "fieldname": "location_abbr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Location Abbr"
+  },
+  {
+   "fieldname": "section_break_rdtzd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Purchase Indent Item"
+  },
+  {
+   "fieldname": "section_break_kjqff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attach_one",
+   "fieldtype": "Attach",
+   "label": "Attach One"
+  },
+  {
+   "fieldname": "column_break_2rp9o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_two",
+   "fieldtype": "Attach",
+   "label": "Attach Two"
+  },
+  {
+   "fieldname": "column_break_ia2sf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_three",
+   "fieldtype": "Attach",
+   "label": "Attach Three"
+  },
+  {
+   "fieldname": "section_break_yovpe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Purchase Indent",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-11 01:41:30.911704",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Purchase Indent",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

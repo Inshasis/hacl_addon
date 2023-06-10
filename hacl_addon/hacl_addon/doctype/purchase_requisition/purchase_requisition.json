@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-08 19:47:50.378807",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date_time",
+  "column_break_ytj6v",
+  "filled_by",
+  "section_break_rdtzd",
+  "items",
+  "section_break_kjqff",
+  "attach_one",
+  "column_break_2rp9o",
+  "email_attach",
+  "column_break_ia2sf",
+  "pdf_attach",
+  "amended_from",
+  "section_break_dowhr",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PR-.MM.-.YY.-"
+  },
+  {
+   "default": "now",
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "label": "Date Time"
+  },
+  {
+   "fieldname": "column_break_ytj6v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "filled_by",
+   "fieldtype": "Link",
+   "label": "Filled By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_rdtzd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Purchase Requisition Item"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_kjqff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2rp9o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_attach",
+   "fieldtype": "Attach",
+   "label": "Attach Two"
+  },
+  {
+   "fieldname": "column_break_ia2sf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pdf_attach",
+   "fieldtype": "Attach",
+   "label": "Attach Three"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Purchase Requisition",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_dowhr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attach_one",
+   "fieldtype": "Attach",
+   "label": "Attach One"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-09 01:24:54.074065",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Purchase Requisition",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

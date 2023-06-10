@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-06 22:46:29.485131",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "user_name",
+  "column_break_jlm9g",
+  "date_time",
+  "location",
+  "location_abbr",
+  "item_section",
+  "source_warehouse",
+  "items",
+  "amended_from",
+  "section_break_eclyb",
+  "requirement_type",
+  "column_break_acbjp",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "default": "__user",
+   "fieldname": "user_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Name",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Material Call",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jlm9g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "now",
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "label": "Date Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_section",
+   "fieldtype": "Section Break",
+   "label": "Item"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "MCF Item"
+  },
+  {
+   "fieldname": "section_break_eclyb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requirement_type",
+   "fieldtype": "Select",
+   "label": "Requirement Type",
+   "options": "\nUrgent\nNormal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_acbjp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "location_abbr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Location Abbr"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "MCF-.{location_abbr}.-.MM.-.YY.-",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-08 01:20:57.667987",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Material Call",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,416 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-06 19:42:17.049574",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date_time",
+  "mrf_data_time",
+  "column_break_my8sf",
+  "company",
+  "location",
+  "location_abbr",
+  "section_break_fc3hu",
+  "mrf_number",
+  "section_break_1y7uh",
+  "signed_mrf",
+  "mrf_view",
+  "section_break_o9i6f",
+  "purpose",
+  "column_break_xiil7",
+  "department",
+  "section_break_u6opr",
+  "required_test",
+  "section_break_azpbs",
+  "source_warehouse",
+  "column_break_rl6ve",
+  "target_warehouse",
+  "section_break_h0mgc",
+  "items",
+  "mrf_remarks",
+  "column_break_essk8",
+  "mrf_authorized",
+  "column_break_7bkmi",
+  "amended_from",
+  "mrf_approved",
+  "mrf_hard_code",
+  "section_break_36rgj",
+  "pickup_person",
+  "person_pickup_material_view",
+  "column_break_evomr",
+  "person_id_proof",
+  "person_id_proof_view",
+  "section_break_o6zvr",
+  "user_remark",
+  "column_break_r3oby",
+  "approving_authority_remark",
+  "section_break_fa0ac",
+  "terms",
+  "section_break_tli6w",
+  "material_issue_by",
+  "column_break_o7ksa",
+  "form_fill_by",
+  "material_issue_by_form",
+  "column_break_acr6q",
+  "mi_approve",
+  "mi_iss_approved",
+  "section_break_8uzxk",
+  "person_signature_by",
+  "column_break_vu7ts",
+  "material_issued_by_signature",
+  "column_break_xnhlz",
+  "material_issue_approved_by_signature"
+ ],
+ "fields": [
+  {
+   "default": "now",
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "label": "Date & Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mrf_number",
+   "fieldtype": "Link",
+   "label": "MRF Number ",
+   "options": "Material Requisition",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_fc3hu",
+   "fieldtype": "Section Break",
+   "label": "MRF Section"
+  },
+  {
+   "fieldname": "signed_mrf",
+   "fieldtype": "Attach",
+   "label": "Signed MRF Hard Copy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mrf_view",
+   "fieldtype": "Image",
+   "label": "MRF View",
+   "options": "signed_mrf"
+  },
+  {
+   "fieldname": "section_break_1y7uh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Material Issuance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_essk8",
+   "fieldtype": "Section Break",
+   "label": "MIS Section"
+  },
+  {
+   "fieldname": "mrf_authorized",
+   "fieldtype": "Select",
+   "label": "Is the MRF signed by the authorized person only as per the authorisation matrix?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7bkmi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mrf_approved",
+   "fieldtype": "Data",
+   "label": "MRF approved in the system by? (name & designation of the person) ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_36rgj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pickup_person",
+   "fieldtype": "Attach",
+   "label": "Person who has come to pick the material (Photo)?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "person_pickup_material_view",
+   "fieldtype": "Image",
+   "label": "Person Pickup Material View",
+   "options": "pickup_person"
+  },
+  {
+   "fieldname": "column_break_evomr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "person_id_proof",
+   "fieldtype": "Attach",
+   "label": "Person who has come to pick the material (ID Proof photo)?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "person_id_proof_view",
+   "fieldtype": "Image",
+   "label": "Person ID Proof View",
+   "options": "person_id_proof"
+  },
+  {
+   "fieldname": "section_break_o6zvr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "material_issue_by",
+   "fieldtype": "Data",
+   "label": "Person who has come to pick the material (Name)?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_tli6w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user_remark",
+   "fieldtype": "Small Text",
+   "label": "User Remark"
+  },
+  {
+   "fieldname": "column_break_r3oby",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approving_authority_remark",
+   "fieldtype": "Small Text",
+   "label": "Approving Authority Remark"
+  },
+  {
+   "fieldname": "mrf_hard_code",
+   "fieldtype": "Data",
+   "label": "MRF hard Copy Sign By ? (name & designation of the person) ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_o7ksa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_acr6q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mi_approve",
+   "fieldtype": "Link",
+   "label": "Form Approved By (UserName)?",
+   "options": "User"
+  },
+  {
+   "fieldname": "mi_iss_approved",
+   "fieldtype": "Data",
+   "label": "Material issue Approved By (Name)?"
+  },
+  {
+   "fieldname": "material_issue_by_form",
+   "fieldtype": "Data",
+   "label": "Material issued By (Name)?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "form_fill_by",
+   "fieldtype": "Link",
+   "label": "Form Filled By (UserName)?",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8uzxk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "material_issued_by_signature",
+   "fieldtype": "Signature",
+   "label": "Material issued By (Signature)?"
+  },
+  {
+   "fieldname": "column_break_xnhlz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_issue_approved_by_signature",
+   "fieldtype": "Signature",
+   "label": "Material issue Approved By (Signature)?"
+  },
+  {
+   "fieldname": "person_signature_by",
+   "fieldtype": "Signature",
+   "label": "Person who has come to pick the material (Signature)?"
+  },
+  {
+   "fieldname": "column_break_vu7ts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "MIS-.{location_abbr}.-.MM.-.YY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_my8sf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location_abbr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Location Abbreviation"
+  },
+  {
+   "fieldname": "section_break_u6opr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "required_test",
+   "fieldtype": "Table",
+   "label": "Required Test",
+   "options": "Required Test",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_azpbs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Warehouse",
+   "options": "Warehouse",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rl6ve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_h0mgc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Material Request Item"
+  },
+  {
+   "fieldname": "mrf_data_time",
+   "fieldtype": "Datetime",
+   "label": "MRF Data & Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_o9i6f",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xiil7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "MRF Request Purpose",
+   "options": "\nCollege Lab Testing\nHACL - Internal Needs",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "mrf_remarks",
+   "fieldtype": "Small Text",
+   "label": "MRF Remarks",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_fa0ac",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "term and conditions testing MIS",
+   "fieldname": "terms",
+   "fieldtype": "Small Text",
+   "label": "Terms and Conditions",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-07 22:30:29.302153",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Material Issuance",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

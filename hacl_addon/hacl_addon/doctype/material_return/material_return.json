@@ -1,0 +1,288 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-08 13:30:17.706941",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date_time",
+  "column_break_8ragh",
+  "location",
+  "location_abbr",
+  "section_break_965ag",
+  "lot_number",
+  "associated_grn_number",
+  "po_number",
+  "column_break_wcdt4",
+  "warehouse_as_per_grn",
+  "traget_warehouse",
+  "amended_from",
+  "section_break_ceb8t",
+  "items",
+  "section_break_ibgdy",
+  "reason_for_return",
+  "column_break_t8v0j",
+  "can_the_material_be_used_again",
+  "section_break_tlq8d",
+  "remarks",
+  "terms",
+  "section_break_ogcjj",
+  "person_who_has_come_to_pick_the_material_photo",
+  "column_break_nsmin",
+  "person_who_has_come_to_pick_the_material_id_proof",
+  "section_break_bq3k3",
+  "material_back_by",
+  "column_break_o3afp",
+  "form_filled_by",
+  "material_issued_by_name",
+  "column_break_ad6h2",
+  "form_approved_by",
+  "material_issue_approved_by_name",
+  "section_break_lqpah",
+  "person_who_has_come_to_pick_the_material_signature",
+  "column_break_ck9k7",
+  "material_issued_by_signature",
+  "column_break_ungda",
+  "material_issue_approved_by_signature"
+ ],
+ "fields": [
+  {
+   "default": "now",
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "label": "Date Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "associated_grn_number",
+   "fieldtype": "Data",
+   "label": "Associated GRN number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Material Return",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ceb8t",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Material Return Item"
+  },
+  {
+   "fieldname": "section_break_ibgdy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason_for_return",
+   "fieldtype": "Small Text",
+   "label": "Reason for Return",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_t8v0j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "can_the_material_be_used_again",
+   "fieldtype": "Select",
+   "label": "Can the material be used again?",
+   "options": "\nYes\nNo\nUnsure",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_tlq8d",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Small Text",
+   "label": "Terms  & Conditions"
+  },
+  {
+   "fieldname": "section_break_965ag",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wcdt4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bq3k3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "material_back_by",
+   "fieldtype": "Data",
+   "label": "Person who has come to pick the material (Name)?"
+  },
+  {
+   "fieldname": "column_break_o3afp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_issued_by_name",
+   "fieldtype": "Data",
+   "label": "Material Return By (Name)?"
+  },
+  {
+   "fieldname": "column_break_ad6h2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_issue_approved_by_name",
+   "fieldtype": "Data",
+   "label": "Material Return Approved By (Name)?"
+  },
+  {
+   "fieldname": "section_break_lqpah",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "person_who_has_come_to_pick_the_material_signature",
+   "fieldtype": "Signature",
+   "label": "Person who has come to pick the material (Signature)?"
+  },
+  {
+   "fieldname": "column_break_ck9k7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_issued_by_signature",
+   "fieldtype": "Signature",
+   "label": "Material Return By (Signature)?"
+  },
+  {
+   "fieldname": "column_break_ungda",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_issue_approved_by_signature",
+   "fieldtype": "Signature",
+   "label": "Material Return Approved By (Signature)?"
+  },
+  {
+   "fieldname": "column_break_8ragh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location_abbr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Location Abbr"
+  },
+  {
+   "fieldname": "form_filled_by",
+   "fieldtype": "Link",
+   "label": "Form Filled By (UserName)?",
+   "options": "User"
+  },
+  {
+   "fieldname": "form_approved_by",
+   "fieldtype": "Link",
+   "label": "Form Approved By (UserName)?",
+   "options": "User"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "MRTF-.{location_abbr}.-.MM.-.YY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lot_number",
+   "fieldtype": "Link",
+   "label": "Lot / Batch Number",
+   "options": "Batch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse_as_per_grn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Warehouse As Per GRN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "traget_warehouse",
+   "fieldtype": "Link",
+   "label": "Traget Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ogcjj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "person_who_has_come_to_pick_the_material_photo",
+   "fieldtype": "Attach",
+   "label": "Person who has come to pick the material (Photo)?"
+  },
+  {
+   "fieldname": "person_who_has_come_to_pick_the_material_id_proof",
+   "fieldtype": "Attach",
+   "label": "Person who has come to pick the material (ID Proof)?"
+  },
+  {
+   "fieldname": "column_break_nsmin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_number",
+   "fieldtype": "Data",
+   "label": "Associated PO Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-08 16:39:14.561667",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Material Return",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

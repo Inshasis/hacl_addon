@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-06 21:02:12.372560",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_time",
+  "amended_from",
+  "section_break_qko08",
+  "scan_barcode",
+  "column_break_ubct4",
+  "source_warehouse",
+  "warehouse_section",
+  "section_break_xo6pm",
+  "item",
+  "section_break_pve9l",
+  "verified_by",
+  "column_break_ov16r",
+  "level_1_user_approver",
+  "level_2_user_approver",
+  "level_3_user_approver"
+ ],
+ "fields": [
+  {
+   "default": "now",
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Material Verification",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_qko08",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "MVF Item"
+  },
+  {
+   "fieldname": "section_break_pve9l",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xo6pm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ov16r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "level_1_user_approver",
+   "fieldtype": "Link",
+   "label": "Level 1 User Approver",
+   "options": "User"
+  },
+  {
+   "fieldname": "level_2_user_approver",
+   "fieldtype": "Link",
+   "label": "Level 2 User Approver",
+   "options": "User"
+  },
+  {
+   "fieldname": "level_3_user_approver",
+   "fieldtype": "Link",
+   "label": "Level 3 User Approver",
+   "options": "User"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Material Verified By",
+   "options": "User"
+  },
+  {
+   "fieldname": "scan_barcode",
+   "fieldtype": "Data",
+   "label": "Scan Barcode",
+   "options": "Barcode"
+  },
+  {
+   "fieldname": "column_break_ubct4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouse_section",
+   "fieldtype": "Link",
+   "label": "Warehouse Section",
+   "options": "Warehouse Section",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-08 01:33:23.249125",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Material Verification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,258 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-08 13:55:06.043211",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "naming_series",
+  "date_time",
+  "column_break_u2scn",
+  "grn_usename",
+  "location",
+  "location_abbr",
+  "section_break_xdibd",
+  "good_receive",
+  "po",
+  "invoice_mtf",
+  "mtf",
+  "column_break_6spuv",
+  "invoice_photo",
+  "other_document",
+  "other_document1",
+  "other_document2",
+  "section_break_orec8",
+  "items",
+  "section_break_cgnx6",
+  "cold_chain_maintained",
+  "column_break_bggat",
+  "material_received_warehouse",
+  "material_received_supllier",
+  "section_break_t5afd",
+  "name_of_delivery_person",
+  "photo_of_delivery_person",
+  "photo_of_id_proof_delivery_person",
+  "column_break_e2ofs",
+  "vehicle_registration_plat_number",
+  "photo_of_vehicle_registration_plate",
+  "section_break_dacmz",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "default": "now",
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date & Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Goods Receipt Note",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "grn_usename",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Username",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xdibd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Goods Receipt Note Item"
+  },
+  {
+   "fieldname": "section_break_orec8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "invoice_mtf",
+   "fieldtype": "Data",
+   "label": "Associated Invoice Number"
+  },
+  {
+   "fieldname": "section_break_cgnx6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cold_chain_maintained",
+   "fieldtype": "Select",
+   "label": "Cold Chain Maintained?",
+   "options": "\nYes\nNo\nNot Required",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bggat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_received_warehouse",
+   "fieldtype": "Data",
+   "label": "Material Received From Warehouse(As Per MTF)"
+  },
+  {
+   "fieldname": "material_received_supllier",
+   "fieldtype": "Data",
+   "label": "PO Material Supllier Name"
+  },
+  {
+   "fieldname": "section_break_t5afd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "photo_of_delivery_person",
+   "fieldtype": "Attach Image",
+   "label": "Photo of Delivery Person"
+  },
+  {
+   "fieldname": "name_of_delivery_person",
+   "fieldtype": "Data",
+   "label": "Name of Delivery Person",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_e2ofs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_registration_plat_number",
+   "fieldtype": "Data",
+   "label": "Number Of Vehicle Registration Plat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo_of_vehicle_registration_plate",
+   "fieldtype": "Attach Image",
+   "label": "Photo of Vehicle Registration Plate"
+  },
+  {
+   "fieldname": "column_break_u2scn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "User Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location_abbr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Location Abbr"
+  },
+  {
+   "fieldname": "section_break_dacmz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Naming Series",
+   "options": "GRN-.{location_abbr}.-.MM.-.YY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "good_receive",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Good being received against which documents ?",
+   "options": "\nPO\nMTF",
+   "reqd": 1
+  },
+  {
+   "fieldname": "po",
+   "fieldtype": "Link",
+   "label": "Purchase Order Number(PO)",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "mtf",
+   "fieldtype": "Link",
+   "label": "Material Transfer Number (MTF)",
+   "options": "Material Transfer"
+  },
+  {
+   "fieldname": "column_break_6spuv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_photo",
+   "fieldtype": "Attach",
+   "label": "Invoice Photo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "other_document",
+   "fieldtype": "Attach",
+   "label": "Other Document"
+  },
+  {
+   "fieldname": "other_document1",
+   "fieldtype": "Attach",
+   "label": "Other Document"
+  },
+  {
+   "fieldname": "other_document2",
+   "fieldtype": "Attach",
+   "label": "Other Document"
+  },
+  {
+   "fieldname": "photo_of_id_proof_delivery_person",
+   "fieldtype": "Attach",
+   "label": "Photo of Id Proof Delivery Person"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-08 17:41:23.253230",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "Goods Receipt Note",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

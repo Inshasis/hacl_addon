@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-06 21:03:46.493753",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "qty",
+  "photo",
+  "video",
+  "photo1",
+  "video1",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remark"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Photo 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "video",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Video 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo1",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Photo 2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "video1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Video 2",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-07 22:40:44.091590",
+ "modified_by": "Administrator",
+ "module": "Hacl Addon",
+ "name": "MVF Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
